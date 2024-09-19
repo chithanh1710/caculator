@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body class="theme-1">
+    <div class="container">
+      <div class="header">
+        <h1 class="logo">calc</h1>
+        <div class="theme-div">
+          <span>theme</span>
+          <div class="toggle-switch" id="theme-toggle">
+            <div class="labels">
+              <span onclick="switchThemeTo('1')">1</span>
+              <span onclick="switchThemeTo('2')">2</span>
+              <span onclick="switchThemeTo('3')">3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="screen">0</div>
+
+      <div class="keys">
+        <div class="key" data-key-value="7">7</div>
+        <div class="key" data-key-value="8">8</div>
+        <div class="key" data-key-value="9">9</div>
+        <div class="key custom-1" data-key-value="del">del</div>
+        <div class="key" data-key-value="4">4</div>
+        <div class="key" data-key-value="5">5</div>
+        <div class="key" data-key-value="6">6</div>
+        <div class="key" data-key-value="+">+</div>
+        <div class="key" data-key-value="1">1</div>
+        <div class="key" data-key-value="2">2</div>
+        <div class="key" data-key-value="3">3</div>
+        <div class="key" data-key-value="-">-</div>
+        <div class="key" data-key-value=".">.</div>
+        <div class="key" data-key-value="0">0</div>
+        <div class="key" data-key-value="/">/</div>
+        <div class="key" data-key-value="×">×</div>
+        <div class="key custom-1 col-span-2" data-key-value="reset">reset</div>
+        <div class="key equal col-span-2" data-key-value="=">=</div>
+      </div>
+    </div>
+    <div
+      style="
+        position: absolute;
+        top: 16%;
+        left: 75%;
+        height: 60%;
+        background-color: aliceblue;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 280px;
+      "
+    >
+      <h2
+        style="
+          margin-bottom: 10px;
+          border-bottom: 2px black solid;
+          padding-bottom: 4px;
+        "
+      >
+        Lịch sử tính toán
+      </h2>
+      <div
+        style="
+          margin-left: 60px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        "
+        id="history"
+      ></div>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
